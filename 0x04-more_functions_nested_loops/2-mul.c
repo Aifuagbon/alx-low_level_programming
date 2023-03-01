@@ -1,30 +1,14 @@
 #include "main.h"
 
 /**
-* print_triangle - create triangle
-* @size: params
-* Return: 0
+* mul - multiplies 2 nums
+* @a: first param
+* @b: second param
+* Return: something
 */
 
-void print_triangle(int size)
+int mul(int a, int b)
 {
-int i = 0, j, n = size - 1;
-if (size > 0)
-{
-for (; i < size; i++)
-{
-for (j = 0; j < size; j++)
-{
-if (j < n)
-_putchar(' ');
-else
-_putchar('#');
-}
-n--;
-_putchar('\n');
-}
-}
-else
-_putchar('\n');
+return (a * b);
 }
 
