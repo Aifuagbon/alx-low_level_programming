@@ -1,8 +1,8 @@
 #include <stdio.h>
 
-int main(int argc, char *argv[]){
+int main(int argc, char *argv[] __attribute__ ((unused)))){
 
-	printf("%d\n %s\n %d\n %s\n", argc, argv[], argc, argv[]);
+	printf("%d\n %d\n %d\n %d\n", argc, argc, argc, argc);
 
 	return(0);
 }
