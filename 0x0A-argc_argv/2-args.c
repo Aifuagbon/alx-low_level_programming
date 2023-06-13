@@ -1,6 +1,7 @@
 #include <stdio.h>
+
  /**
-  * write a program that prints all arguments it receives.
+  * main - prints all arguments it receives.
   */
 
 
