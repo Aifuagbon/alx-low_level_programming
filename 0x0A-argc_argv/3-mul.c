@@ -14,8 +14,8 @@ int main(int argc, char *argv[]) {
         return 1;
     }
 
-    int figure1 = atoi(argv[1]);
-    int figure2 = atoi(argv[2]);
+    int x = atoi(argv[1]);
+    int k = atoi(argv[2]);
     int outcome = figure1 * figure2;
 
     printf("%d\n", outcome);
