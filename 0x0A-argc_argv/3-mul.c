@@ -14,9 +14,9 @@ int main(int argc, char *argv[]) {
         return 1;
     }
 
-    int x = atoi(argv[1]);
-g   int k = atoi(argv[2]);
-    int outcome = x * k;
+    int number1 = atoi(argv[1]);
+g   int number2 = atoi(argv[2]);
+    int outcome = number1 * number2;
 
     printf("%d\n", outcome);
 
