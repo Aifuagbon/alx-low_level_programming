@@ -1,4 +1,5 @@
 #include <stdio.h>
+#include <stdlib.h>
 
 /**
  * main - Multiplies two numbers.
@@ -7,10 +8,17 @@
  *
  * return: Always 0.
  */
-int main(int argc, char *argv[] __attribute__ ((unused)))
-{
+int main(int argc, char *argv[]) {
+ if (argc != 3) {
+        printf("Error\n");
+        return 1;
+    }
 
-(argc == 2);
-printf("%d x %d\n", argc, argc);
-return (0);
-} 
+    int figure1 = atoi(argv[1]);
+    int figure2 = atoi(argv[2]);
+    int outcome = figure1 * figure2;
+
+    printf("%d\n", outcome);
+
+  return 0;
+}
