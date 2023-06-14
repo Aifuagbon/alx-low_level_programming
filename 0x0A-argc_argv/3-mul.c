@@ -9,6 +9,7 @@
  * return: Always 0.
  */
 int main(int argc, char *argv[]) {
+	int number1, number2, outcome;
  if (argc != 3) {
         printf("Error\n");
         return 1;
