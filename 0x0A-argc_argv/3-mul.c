@@ -9,17 +9,16 @@
  * return: Always 0.
  */
 int main(int argc, char *argv[]) {
-	int number1, number2, outcome;
- if (argc != 3) {
+    if (argc != 3) {
         printf("Error\n");
         return 1;
     }
 
-    int number1 = atoi(argv[1]);
-g   int number2 = atoi(argv[2]);
-    int outcome = number1 * number2;
+    int num1 = atoi(argv[1]);
+    int num2 = atoi(argv[2]);
+    int result = num1 * num2;
 
-    printf("%d\n", outcome);
+    printf("%d\n", result);
 
-  return 0;
+    return 0;
 }
