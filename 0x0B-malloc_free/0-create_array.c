@@ -9,7 +9,7 @@
 char *create_array(unsigned int size, char c)
 {
 		char *arr;
-		unsigned int i;
+		unsigned int j;
 
 		if (size == 0)
 		{
@@ -24,9 +24,9 @@ char *create_array(unsigned int size, char c)
 			return (NULL);
 		}
 
-		for (i = 0; i < size; i++)
+		for (j = 0; j < size; j++)
 		{
-			arr[i] = c;
+			arr[j] = c;
 		}
 
 		return (arr);
