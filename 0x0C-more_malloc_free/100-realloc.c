@@ -7,11 +7,11 @@
  * @old_size: input
  * @new_size: input
  * Return: 0
- */
+i */
 void *_realloc(void *ptr, unsigned int old_size, unsigned int new_size)
 {
 	char *p;
-	unsigned int i, max = new_size;
+	unsigned int j, max = new_size;
 	char *oldp = ptr;
 
 	if (ptr == NULL)
@@ -32,8 +32,8 @@ void *_realloc(void *ptr, unsigned int old_size, unsigned int new_size)
 		return (NULL);
 	if (new_size > old_size)
 		max = old_size;
-	for (i = 0; i < max; i++)
-		p[i] = oldp[i];
+	for (j = 0; j < max; j++)
+		p[j] = oldp[j];
 	free(ptr);
 	return (p);
 }
