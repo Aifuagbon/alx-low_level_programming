@@ -8,7 +8,7 @@
 char *_strdup(char *str)
 {
 	char *nstr;
-	unsigned int len, i;
+	unsigned int len, j;
 
 	/* check is str is null */
 	if (str == NULL)
@@ -30,9 +30,9 @@ char *_strdup(char *str)
 		return (NULL);
 	}
 
-	for (i = 0; i < len; i++)
+	for (j = 0; j < len; j++)
 	{
-		nstr[i] = str[i];
+		nstr[j] = str[j];
 	}
 	nstr[len] = '\0';
 	return (nstr);
